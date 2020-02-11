@@ -28,12 +28,12 @@ const purchaseBurgerSuccess = (state, action) => {
         loading: false,
         purchased: true
     };
-    return updatedState(state, updatedState);
+    return updateObject(state, updatedState);
 }
 
 const purchaseBurgerFail = (state, action) => {
     const updatedState = {
-        loading: false
+        loading: false,
     };
     return updateObject(state, updatedState);
 }
